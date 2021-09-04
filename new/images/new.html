@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS JS</title>
+    <style>
+        h1 {
+  font-family: Impact, sans-serif;
+  color: #CE5937;
+}
+.container{
+  margin:0px 250px;
+  background-color:gray;
+}
+.second-div{
+  margin-left:25px;
+  color:tomato;
+}
+.area1{
+  height:200px;
+  width:90%;
+}
+#btn{
+  margin-left:60px;
+}
+          
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <div class="second-div">
+        <h3>
+          Word and  character counter
+          
+        </h3>
+        <p>
+          word :<span id="wor">0</span>
+        </p>
+        <p>
+          character:<span id="char">0</span>
+         
+        </p>
+         <textarea id="area" class="area1" placeholder="Type Here to get word & character value..."></textarea>
+      </div>
+      <button id="btn">
+        clear all Data
+      </button>
+      
+    </div>
+    <script>
+        let main=document.getElementById('area');
+let word=document.getElementById('wor');
+let character=document.getElementById('char');
+let button=document.getElementById('btn');
+main.addEventListener('input',function(){
+  let orginal=main.value.length;
+  character.innerText= orginal;
+
+  //word count
+  let wordCount=main.value;
+  wordCount=wordCount.trim();
+  let wordCount1=wordCount.split(' ');
+  if(wordCount1[0]==0){
+      word.innerText="0";
+  }else{
+      word.innerText=wordCount1.length;
+  }
+})
+button.addEventListener('click',function(){
+ main.value=" ";
+ character.innerText="0";
+ word.innerText="0";
+  
+})
+    </script>
+  </body>
+</html>
