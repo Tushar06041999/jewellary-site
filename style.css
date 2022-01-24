@@ -83,3 +83,36 @@ nav ul ul ul li{
     top:-70px;
     left:150px;
 }
+.image-section{
+    background-image: url(images/pexels-pixabay-248077\ \(1\).jpg);
+    background-repeat:no-repeat;
+    backface-visibility: inherit;
+    background-position: fixed;
+    width:100%;
+    height: 600px;
+    
+}
+.service{
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.service p{
+    color: #000;
+    font-weight:bold;
+}
+
+.card-body h5,p{
+    color:#000;
+}
+#input{
+    color:#000;
+    border-radius: 8px;
+}
+
+footer p{
+text-align: center;
+margin-top: 30px;
+color: #000;
+}

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navigation Bar Html css</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -20,8 +19,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a>
             <ul>
-                <li><a href="#">pages</a></li>
-                <li><a href="#">Elements</a></li>
+                <li><a href="#jwellary">Jwellary</a></li>
+                <li><a href="#Touch">Grt In Touch</a></li>
                 <li><a href="#">Icons
                     <span class="fa fa-plus"></span>
                 </a></li>
@@ -43,25 +42,71 @@
         <script src="js/second.js"></script>
         </li>
 
-      <li><a href="#">portfolio</a></li>
+      <li><a href="https://tushar06041999.github.io/my-protfolio/?fbclid=IwAR0r0bViCEDgVaVajVxns_WTDnRZeIi4NWoS4o6RaZ3iLdAcCj8vX5d0OUc">portfolio</a></li>
       <li><a href="#">contacts</a></li>
     </ul>
 </nav>
 
-<section class="container d-flex mt-5">
-    <div class="col-6">
-    <img src="images/pexels-pixabay-248077 (1).jpg" class="img-fluid max-width: 100%" alt="">
-    </div>
-    <div class="col-6">
- <h1 class="text-danger">Our Services</h1>
- <p class="text-dark">“The real story of the Fleece: there were these two children of Zeus, Cadmus and Europa, okay? They were about to get offered up as human sacrifices, when they prayed to Zeus to save them. So Zeus sent this magical flying ram with golden wool, which picked them up in Greece and carried them all the way to Colchis in Asia Minor. Well, actually it carried Cadmus. Europa fell off and died along the way, but that's not important."
-    "It was probably important to her.”
-    ― Rick Riordan, The Sea of Monsters.“All that is gold does not glitter,
-   
-    </p>
-    </div>
+<section>
+  <img class="image-section" src="images/pexels-pixabay-248077 (1).jpg" alt="">
 </section>
+<div class="service">
+    <p id="jwellary">Our Services</p>
+</div>
 
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/pexels-pixabay-248077 (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jwellary</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/pexels-pixabay-248077 (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jwellary</h5>
+          <p class="card-text">This is a short card.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/pexels-pixabay-248077 (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jwellary</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/pexels-pixabay-248077 (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jwellary</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="Touch" class="service">
+      <p>Get In Touch</p>
+      <div>
+        <input id="input" type="email" name="" id="" placeholder="Enter Your Email">
+        <input id="input" type="submit" value="Submit">
+      </div>
+  </section>
+
+
+  <footer>
+<p>&copy;All Right Reserved Tushar 2022</p>
+  </footer>
 
 
 </body>
